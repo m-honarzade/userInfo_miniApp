@@ -10,10 +10,12 @@ type AnchorProps = {
 const Button = (props: ButtonProps | AnchorProps) => {
   if (props.el === "button")
     return (
-      <button
-        {...props}
-        className="text-white text-sm rounded-md py-2 px-4 border border-gray-700"
-      ></button>
+      <div className="">
+        <button
+          {...props}
+          className="text-white text-sm rounded-md py-2 px-4 border border-gray-700"
+        ></button>
+      </div>
     );
   return (
     <a
