@@ -6,7 +6,7 @@ type InputProps = {
 } & ComponentPropsWithoutRef<"input">;
 const Input = ({ id, label, ...props }: InputProps) => {
   return (
-    <p className="flex flex-row justify-between gap-2 text-white bg-blue-950 w-[80%] mx-auto p-6 rounded-md">
+    <p className="flex flex-row justify-between gap-2 text-white bg-blue-950 w-[90%] mx-auto p-6 rounded-md">
       <label htmlFor={id} className="">
         {label}
       </label>
