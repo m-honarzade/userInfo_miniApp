@@ -12,10 +12,11 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           {label}
         </label>
         <input
+          name={id}
           id={id}
           {...props}
           ref={ref}
-          className="w-full rounded-sm p-2 bg-yellow-100"
+          className="w-full rounded-sm p-2 bg-yellow-100 text-black"
         />
       </p>
     );
